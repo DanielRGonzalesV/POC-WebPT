@@ -2,11 +2,11 @@ buildscript {
     repositories {
         jcenter()
         maven {
-            url 'http://repo.bodar.com'
+            url 'https://repo.bodar.com'
         }
     }
     dependencies {
-        classpath "io.qameta.allure:allure-gradle:2.5"
+//        classpath "io.qameta.allure:allure-gradle:2.5"
     }
 }
 plugins {
@@ -21,14 +21,14 @@ allure {
     reportDir = allureReport
 }
 dependencies {
-    compile project(":report-analytics-core")
-    compile project(":report-analytics-api")
-    compile group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '4.3.1'
-    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
+    implementation project(":report-analytics-core")
+    implementation project(":report-analytics-api")
+    implementation group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '4.3.1'
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
 }
 configurations {
     cucumberRuntime {
-        extendsFrom testRuntime
+        extendsFrom testRuntimeOnly
     }
 }
 

@@ -28,10 +28,10 @@ allprojects {
         }
     }
     dependencies {
-        compile group: 'io.cucumber', name: 'cucumber-testng', version: '5.7.0'
-        compile group: 'io.cucumber', name: 'cucumber-java', version: '5.7.0'
-        testCompile group: 'io.cucumber', name: 'cucumber-picocontainer', version: '5.7.0'
-        testCompile group: 'io.qameta.allure', name: 'allure-cucumber5-jvm', version: '2.13.8'
+        implementation group: 'io.cucumber', name: 'cucumber-testng', version: '5.7.0'
+        implementation group: 'io.cucumber', name: 'cucumber-java', version: '5.7.0'
+        testImplementation group: 'io.cucumber', name: 'cucumber-picocontainer', version: '5.7.0'
+        testImplementation group: 'io.qameta.allure', name: 'allure-cucumber5-jvm', version: '2.13.8'
     }
 }
 
