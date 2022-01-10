@@ -12,3 +12,17 @@ gradle-app.setting
 
 # # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
 # gradle/wrapper/gradle-wrapper.properties
+
+/.gradle/
+/.idea/
+/gradle/
+/allure-report*/
+/allure-results*/
+/log/
+/report/
+/.allure/
+/.scannerwork/
+debug.log
+/report-analytics-web/logs/report-analytics-web.log
+/report-analytics-api/logs/report-analytics-api.log
+/report-analytics-core/logs/report-analytics-core.log
