@@ -1,0 +1,5 @@
+rootProject.name = 'POC-WebPT'
+include 'report-analytics-web'
+include 'report-analytics-api'
+include 'report-analytics-core'
+
