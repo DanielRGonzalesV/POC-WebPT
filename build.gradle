@@ -1,9 +1,6 @@
 allprojects {
     repositories {
-//        jcenter()
-        maven {
-            url 'http://repo.bodar.com'
-        }
+        jcenter()
     }
     apply plugin: 'java'
     apply plugin: 'idea'
