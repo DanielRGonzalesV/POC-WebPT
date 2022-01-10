@@ -21,8 +21,8 @@ allure {
     reportDir = allureReport
 }
 dependencies {
-    compile project(":challenge-core")
-    compile project(":challenge-api")
+    compile project(":report-analytics-core")
+    compile project(":report-analytics-api")
     compile group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '4.3.1'
     compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
 }
