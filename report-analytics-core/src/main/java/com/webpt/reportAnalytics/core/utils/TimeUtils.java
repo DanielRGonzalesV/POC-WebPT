@@ -1,13 +1,15 @@
-package com.webpt.testing.reportAnalytics.utils;
+package com.webpt.reportAnalytics.core.utils;
 
-import org.apache.log4j.Logger;
+import com.webpt.reportAnalytics.core.constants.EnvConstants;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 /**
  * Time utils class.
  */
 public final class TimeUtils {
 
-    private static final Logger LOGGER = Logger.getLogger(TimeUtils.class.getName());
+    private static final Logger LOGGER = LogManager.getLogger(EnvConstants.class.getSimpleName());
 
     /**
      * Constructor to prevent instantiation.

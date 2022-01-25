@@ -1,7 +1,9 @@
-package com.webpt.testing.reportAnalytics.constants;
+package com.webpt.reportAnalytics.core.constants;
 
-import org.apache.log4j.Logger;
-import us.challenge.core.utils.PropertiesInfo;
+import com.webpt.reportAnalytics.core.utils.PropertiesInfo;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -10,7 +12,7 @@ import java.util.Map;
  * This class holds values used in testing.
  */
 public final class EnvConstants {
-    private static final Logger LOGGER = Logger.getLogger(EnvConstants.class.getSimpleName());
+    private static final Logger LOGGER = LogManager.getLogger(EnvConstants.class.getSimpleName());
     private static final Map<String, String> CONSTANTS_MAP = new HashMap<>();
 
     static {
@@ -40,8 +42,7 @@ public final class EnvConstants {
      * This method adds the constants values to the map.
      */
     private static void initSLConstants() {
-        CONSTANTS_MAP.put("actualPhone", PropertiesInfo.getInstance().actualPhone());
-        CONSTANTS_MAP.put("AdminUserEmail", PropertiesInfo.getInstance().getEmail());
+        CONSTANTS_MAP.put("clinicName", PropertiesInfo.getInstance().getClinicName());
     }
 
     /**

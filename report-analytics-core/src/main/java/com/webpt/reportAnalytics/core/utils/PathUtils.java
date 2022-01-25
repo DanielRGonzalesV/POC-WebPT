@@ -1,4 +1,4 @@
-package com.webpt.testing.reportAnalytics.utils;
+package com.webpt.reportAnalytics.core.utils;
 
 import java.io.File;
 import java.util.regex.Matcher;
@@ -9,8 +9,8 @@ import java.util.regex.Matcher;
 public final class PathUtils {
 
     private static final String CURRENT_DIRECTORY = ".";
-    private static final String PATH_REGEX = ".+[/\\\\]challenge-[\\w]{1,7}[/\\\\]\\.$";
-    private static final String REPLACE_REGEX = "challenge-[\\w]{1,7}[/\\\\]\\.$";
+    private static final String PATH_REGEX = ".+[/\\\\]report-analytics-[\\w]{1,7}[/\\\\]\\.$";
+    private static final String REPLACE_REGEX = "report-analytics-[\\w]{1,7}[/\\\\]\\.$";
     private static final String PATH_WINDOWS_REGEX = "^[A-Z]:\\\\.*";
     private static final String EMPTY_STRING = "";
     private static final String SLASH = "/";

@@ -1,4 +1,4 @@
-package com.webpt.testing.reportAnalytics.utils;
+package com.webpt.reportAnalytics.core.utils;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -12,10 +12,10 @@ public final class PropertiesInfo {
     private static final String CONFIG_PROPERTIES = PathUtils.buildPath("gradle.properties");
     private static final String URL = "url";
     private static final String BROWSER = "browser";
-    private static final String EMAIL = "email";
-    private static final String ACTUAL_PHONE = "actualPhone";
-    private static final String BASE_API = "urlApi";
-    private static final String PASSWORD = "password";
+    private static final String EMR_USER_NAME = "emr.user.name";
+    private static final String EMR_PASSWORD = "emr.password";
+    private static final String CLINIC_NAME = "clinic.name";
+    private static final String DATE_RANGE = "date.range";
 
     private static PropertiesInfo instance;
     private Properties properties;
@@ -90,34 +90,6 @@ public final class PropertiesInfo {
     }
 
     /**
-     * This method gets email.
-     *
-     * @return email.
-     */
-    public String getEmail() {
-        return getProperty(EMAIL);
-    }
-
-    /**
-     * This method get api email.
-     *
-     * @return api email.
-     */
-    public String actualPhone() {
-        return getProperty(ACTUAL_PHONE);
-    }
-
-    /**
-     * This method get base api.
-     *
-     * @return base api.
-     */
-    public String getBaseApi() {
-        return getProperty(BASE_API);
-    }
-
-
-    /**
      * This method retrieves the URL of the WebApplication to be used.
      *
      * @return the url of the WebApplication.
@@ -126,12 +98,8 @@ public final class PropertiesInfo {
         return getProperty(URL);
     }
 
-    /**
-     * This method retrieves the Password to use for Employees
-     *
-     * @return the employees password.
-     */
-    public String getPassword() {
-        return getProperty(PASSWORD);
+
+    public String getClinicName() {
+        return getProperty(CLINIC_NAME);
     }
 }

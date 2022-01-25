@@ -21,8 +21,8 @@ allure {
     reportDir = allureReport
 }
 dependencies {
-    implementation project(":report-analytics-core")
-    implementation project(":report-analytics-api")
+    implementation (project(":report-analytics-api"))
+    implementation (project(":report-analytics-core"))
     implementation group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '4.3.1'
     implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
 }
