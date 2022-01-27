@@ -43,5 +43,5 @@ task webFeatures(type: Test) {
     testLogging.showStandardStreams = true
     // Flag to scan for classes with @Test annotation.
     scanForTestClasses = false
-    finalizedBy 'allureReport'
+//    finalizedBy 'allureReport'
 }

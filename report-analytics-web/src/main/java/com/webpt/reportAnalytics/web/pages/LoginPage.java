@@ -26,7 +26,6 @@ public class LoginPage extends BasePage{
         this.enterPassword(password);
     }
 
-
     public void navigateToBaseUrl() {
         driver.get(PropertiesInfo.getInstance().getUrl());
     }
@@ -44,9 +43,7 @@ public class LoginPage extends BasePage{
     }
     public void enterPassword(String userPassword) {
         try {
-
             password.clear();
-            //password.click();
             password.sendKeys(userPassword);
             password.sendKeys(Keys.TAB);
         }catch(Exception e) {
@@ -60,16 +57,7 @@ public class LoginPage extends BasePage{
             if(evictOkBtn.isDisplayed()) {
                 evictOkBtn.click();
             }
-            //}catch (NoSuchElementException e) {
-            //	System.out.println("element not exists");
-            //	}
-            //	try {
-            //if(emrOkBtn.isDisplayed()) {
-            //		emrOkBtn.click();
-            //	}
-            //	}catch (NoSuchElementException e) {
             System.out.println("emr popup screen not exist");
-            //	}
 
         }catch (NoSuchElementException e) {
             System.out.println("element not exists");

@@ -23,6 +23,6 @@ gradle-app.setting
 /.allure/
 /.scannerwork/
 debug.log
-/report-analytics-web/logs/report-analytics-web.log
-/report-analytics-api/logs/report-analytics-api.log
-/report-analytics-core/logs/report-analytics-core.log
+/report-analytics-web/logs/reportAnalytics-web.log
+/report-analytics-api/logs/reportAnalytics-api.log
+/report-analytics-core/logs/reportAnalytics-core.log

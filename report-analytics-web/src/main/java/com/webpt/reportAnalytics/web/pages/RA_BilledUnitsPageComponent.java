@@ -4,7 +4,6 @@ import com.webpt.reportAnalytics.core.utils.TimeUtils;
 import com.webpt.reportAnalytics.web.utils.CommonActions;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 
 public class RA_BilledUnitsPageComponent extends BasePage {
